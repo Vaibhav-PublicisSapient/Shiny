@@ -2,7 +2,7 @@ FROM rocker/r-ver:3.4.4
 MAINTAINER Mark Edmondson (r@sunholo.com)
 
 # install R package dependencies
-RUN apt-get update && libcurl4-openssl-dev && apt-get -qq -y install curl \
+RUN apt-get update && apt-get libcurl4-gnutls-dev && apt-get libcurl4-openssl-dev && apt-get -qq -y install curl \
     libssl-dev \
     ## clean up
     && apt-get clean \ 
