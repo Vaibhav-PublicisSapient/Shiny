@@ -1,4 +1,4 @@
-FROM gcr.io/myrshinyproject/shiny-googleauthrdemo
+FROM rocker/r-ver:3.4.4
 MAINTAINER Mark Edmondson (r@sunholo.com)
 
 # install R package dependencies
