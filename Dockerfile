@@ -18,5 +18,7 @@ RUN install2.r --error \
     ## clean up
     && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
+RUN R -e "install.packages(c('shiny', 'shinydashboard'), repos='http://cran.rstudio.com/')"
+
 ## assume shiny app is in build folder /shiny
 COPY ./Shiny/ /srv/shiny-server/shiny/
