@@ -3,7 +3,7 @@ library(googleAuthR)
 options(googleAuthR.scopes.selected = "https://www.googleapis.com/auth/urlshortener")
 options(googleAuthR.webapp.client_id = "201908948134-cjjs89cffh3k429vi7943ftpk3jg36ed.apps.googleusercontent.com")
 options(googleAuthR.webapp.client_secret = "mE7rHl0-iNtzyI1MQia-mg1o")
-
+options(shiny.port = 8080)
 shorten_url <- function(url){
   
   body = list(
