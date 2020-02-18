@@ -1,4 +1,4 @@
-FROM rocker/r-ver:3.4.4
+FROM rocker/shiny
 MAINTAINER Mark Edmondson (r@sunholo.com)
 
 # install R package dependencies
